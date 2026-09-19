@@ -4,322 +4,1568 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bishal Jaiswal — Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description"
+        content="Bishal Jaiswal — Computer Science student, Web Developer, Machine Learning and Data Science enthusiast.">
+    <title>Bishal Jaiswal | Web Developer & ML Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Bishal Jaiswal</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                Bishal Jaiswal<span>.</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+                <a href="#skills" class="nav-link">
+                    Skills
+                </a>
+                <a href="#projects" class="nav-link">
+                    Projects
+                </a>
+                <a href="#ml-ds" class="nav-link">
+                    ML
+                </a>
+                <a href="#education" class="nav-link">
+                    Education
+                </a>
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+            </div>
+            <a href="#contact" class="nav-cta">
+                Let's Connect
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#edu">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certifications">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="https://drive.google.com/file/d/1N3qFgTFYXG9g9kMqoskXAQYeUITc14Ov/view?usp=sharing"
-                            data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</a>
-                    </li>
-                </ul>
+        </nav>
+    </header>
+    <!-- =========================
+         HERO
+    ========================== -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="hero-grid"></div>
+                <div class="hero-glow hero-glow-one"></div>
+                <div class="hero-glow hero-glow-two"></div>
             </div>
-        </div>
-    </nav>
-
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-content">
-                    <h1>Hi, I'm <span class="highlight">Bishal Jaiswal</span></h1>
-                    <p style="margin: 0;">Web Development | Machine Learning</p>
-                    <p style="margin-top: 0;">I build web applications and data-driven machine learning solutions.</p>
-                    <a href="#projects"><button class="btn btn-primary-custom">View My Work</button></a>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <img src="https://res.cloudinary.com/cre8kwyk/image/upload/v1789603569/profile.png"
-                        alt="Profile Picture" class="profile-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="edu" class="education-section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="edu-card">
-                        <div class="cert-header">
-                            <div class="cert-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div>
-                                <h4 class="cert-title">National Institute Of Technology Rourkela</h4>
-                                <p class="cert-issuer" style="margin-bottom: 0;">&nbsp; &nbsp; Bachelor of Technology in Computer Science</p>
-                                <p class="cert-issuer" style="margin-bottom: 0; margin-top: 0;">&nbsp; &nbsp; CGPA: 7.02</p>
-                                <p class="cert-issuer" style="margin-bottom: 0; margin-top: 0;">&nbsp; &nbsp; <i class="fas fa-calendar-alt"></i> September 2023 -- Present</p>
-                            </div>
-                        </div>
+            <div class="container hero-container">
+                <!-- LEFT SIDE -->
+                <div class="hero-content">
+                    <div class="availability-badge">
+                        <span class="availability-dot"></span>
+                        Open to opportunities
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="edu-card">
-                        <div class="cert-header">
-                            <div class="cert-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div>
-                                <h4 class="cert-title">Prasadi Academy Secondary School</h4>
-                                <p class="cert-issuer" style="margin-bottom: 0;">&nbsp; &nbsp; High School - (Science Stream)</p>
-                                <p class="cert-issuer" style="margin-bottom: 0; margin-top: 0;">&nbsp; &nbsp; Percentage: 88.75%</p>
-                                <p class="cert-issuer" style="margin-bottom: 0; margin-top: 0;">&nbsp; &nbsp; <i class="fas fa-calendar-alt"></i> 2020 -- 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="skill-card">
-                        <i class="fas fa-code skill-icon"></i>
-                        <h4>Programming</h4>
-                        <p>Java, Python, JavaScript</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="skill-card">
-                        <i class="fas fa-desktop skill-icon"></i>
-                        <h4>Frontend</h4>
-                        <p>HTML, CSS, JavaScript, React, Bootstrap</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill-card">
-                        <i class="fas fa-server skill-icon"> |</i> &nbsp;
-                        <i class="fas fa-database skill-icon"> </i>
-                        <h4>Backend & Databases</h4>
-                        <p>Node.js, Express.js, MySQL, MongoDB</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill-card">
-                        <i class="fas fa-tools skill-icon"></i>
-                        <h4>Others Dev & Tech Tools</h4>
-                        <p>Git, Github, VS Code, Vercel, Railway, Render</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="project-body">
-                            <h4>Venue Booking Platform</h4>
-                            <p>A full-featured online venue booking platform with payment integration.</p>
-                            <a href="https://bookmyvenue-nf5p.onrender.com/" class="btn btn-primary-custom btn-sm"
-                                target="_blank">Live Demo</a>
-                            <a href="https://github.com/jaiswalbishal/BookMyVenue" class="btn btn-primary-custom btn-sm"
-                                target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            🎮
-                        </div>
-                        <div class="project-body">
-                            <h4>Simson Say Game</h4>
-                            <p>A classic “Simon Says” memory game with featuring score tracking and interactive UI.</p>
-                            <a href="https://jaiswalbishal.github.io/SimonSays/" class="btn btn-primary-custom btn-sm"
-                                target="_blank">Live Demo</a>
-                            <a href="https://github.com/jaiswalbishal/SimonSays" class="btn btn-primary-custom btn-sm"
-                                target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <i class="fas fa-file"></i>
-                        </div>
-                        <div class="project-body">
-                            <h4>DocFlow</h4>
-                            <p>A workspace enabling users to create, edit, organize, share, collab and download documents. </p>
-                            <a href="https://docflow-self.vercel.app/" class="btn btn-primary-custom btn-sm"
-                                target="_blank">Live Demo</a>
-                            <a href="https://github.com/jaiswalbishal/DocFlow" class="btn btn-primary-custom btn-sm"
-                                target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certifications" class="certifications-section">
-        <div class="container">
-            <h2 class="section-title">Achievements & Certifications</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="cert-card">
-                        <div class="cert-header">
-                            <div class="cert-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <div>
-                                <h4 class="cert-title">Oracle AI Foundation Certification</h4>
-                                <p class="cert-issuer" style="margin-bottom: 0;">Issued By: Oracle</p>
-                                <p class="cert-issuer" style="margin-top: 0;"><i class="fas fa-calendar-alt"></i> Issued Date: October 2025</p>
-                            </div>
-                        </div>
-                        <div class="cert-credential">
-                            <div class="credential-label">
-                                Gained understanding of AI, ML, DL and GenAI core concepts, models, and real-world
-                                applications.
-                            </div>
-                        </div>
-                        <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=EB0A370969A1F7D9848959B0ABCC9B02D9CF0F323EF20C2E1B605D1357EBEE30"
-                            class="cert-verify-btn text-center" target="_blank">
-                            <i class="fas fa-check-circle"></i> View Credential
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="cert-card">
-                        <div class="cert-header">
-                            <div class="cert-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <div>
-                                <h4 class="cert-title">Oracle Generative AI Professional</h4>
-                                <p class="cert-issuer" style="margin-bottom: 0;">Issued By: Oracle</p>
-                                <p class="cert-issuer" style="margin-top: 0;"><i class="fas fa-calendar-alt"></i> Issued Date: October 2025</p>
-                            </div>
-                        </div>
-                        <div class="cert-credential">
-                            <div class="credential-label">
-                                Strengthened understanding of LLMs, GenAI, RAG Agents and models improvements
-                                fundamentals and
-                                Built a context-aware AI chatbot using RAG, LangChain, OCI - GenAI Agents and services.
-                            </div>
-                        </div>
-                        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=4824DA2203B028B31F91124DCEB4022096E8DA91D81117F74027D66BD9505AA4"
-                            class="cert-verify-btn text-center" target="_blank">
-                            <i class="fas fa-check-circle"></i> View Credential
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" name="from_name" placeholder="Your Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" name="from_email" placeholder="Your Email" required>
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" rows="5" name="message" placeholder="Your Message"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary-custom w-100" id="submitBtn">
-                        <span id="btnText">Send Message</span>
-                        <span id="btnLoading" style="display: none;">
-                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                    <p class="hero-intro">
+                        Hi, I'm Bishal Jaiswal
+                    </p>
+                    <h1 class="hero-title">
+                        Web Developer
+                        <br>
+                        <span class="hero-gradient">
+                            & ML Engineer.
                         </span>
-                    </button>
-                    <div id="formMessage" class="mt-3 text-center" style="display: none;"></div>
-                </form>
-                <div class="social-links">
-                    <a href="https://github.com/jaiswalbishal" class="social-icon" target="_blank"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/jaiswalbishal" class="social-icon"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </h1>
+                    <p class="hero-description">
+                        I'm a Computer Science undergraduate at NIT Rourkela specializing in
+                        <strong>Web Development</strong> and
+                        <strong>Machine Learning.</strong>
+                        I build web applications and develop
+                        data-driven machine learning solutions.
+                    </p>
+                    <!-- HERO BUTTONS -->
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Projects
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    <!-- SOCIAL LINKS -->
+                    <div class="hero-socials">
+                        <span class="social-label">
+                            Find me on
+                        </span>
+                        <a href="https://github.com/jaiswalbishal" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.kaggle.com/jaiswalbishal" target="_blank" rel="noopener noreferrer"
+                            aria-label="Kaggle">
+                            <i class="fa-brands fa-kaggle"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jaiswalbishal" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaiswalbishal17@gmail.com"
+                            target="_blank" rel="noopener noreferrer" aria-label="Email Bishal">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- RIGHT SIDE -->
+                <div class="hero-visual">
+                    <div class="profile-wrapper">
+                        <div class="profile-ring"></div>
+                        <div class="profile-card">
+                            <div class="profile-image-container">
+                                <img src="https://res.cloudinary.com/cre8kwyk/image/upload/v1789603569/profile.png"
+                                    alt="Bishal Jaiswal" class="profile-image">
+                            </div>
+                            <div class="profile-info">
+                                <h2>
+                                    Bishal Jaiswal
+                                </h2>
+                                <p>
+                                    Developer · ML · Data Science
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FLOATING CARD 1 -->
+                        <div class="floating-card floating-card-one">
+                            <div class="floating-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div>
+                                <strong>
+                                    Web Development
+                                </strong>
+                                <span>
+                                    Full-Stack
+                                </span>
+                            </div>
+                        </div>
+                        <!-- FLOATING CARD 2 -->
+                        <div class="floating-card floating-card-two">
+                            <div class="floating-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div>
+                                <strong>
+                                    Machine Learning
+                                </strong>
+                                <span>
+                                    Data Driven
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SCROLL INDICATOR -->
+            <a href="#about" class="scroll-indicator">
+                <span>
+                    Scroll to explore
+                </span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+        <!-- =========================
+            ABOUT
+        ========================== -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <!-- SECTION HEADER -->
+                <div class="section-heading">
+                    <p class="section-eyebrow">
+                        ABOUT ME
+                    </p>
+                    <h2>
+                        Building software.
+                        <br>
+                        <span>Solving problems with data.</span>
+                    </h2>
+                    <p class="section-heading-description">
+                        A Computer Science student focused on building
+                        practical software and intelligent, data-driven
+                        solutions.
+                    </p>
+                </div>
+                <!-- MAIN ABOUT CONTENT -->
+                <div class="about-layout">
+                    <!-- LEFT -->
+                    <div class="about-main">
+                        <div class="about-card">
+                            <div class="about-card-number">
+                                01
+                            </div>
+                            <h3>
+                                Who I Am
+                            </h3>
+                            <p>
+                                I'm a Computer Science student at
+                                <strong>National Institute of Technology Rourkela</strong>,
+                                with a strong interest in software engineering,
+                                machine learning, and data science.
+                            </p>
+                            <p>
+                                I enjoy taking a problem from an idea to a
+                                working solution — designing the application,
+                                building the backend, working with databases,
+                                analyzing data, developing machine learning
+                                models, and improving the final product.
+                            </p>
+                        </div>
+                        <div class="about-card about-card-highlight">
+                            <div class="about-card-number">
+                                02
+                            </div>
+                            <h3>
+                                What I Build
+                            </h3>
+                            <p>
+                                My work combines <strong>Web Development</strong>
+                                with <strong>Machine Learning</strong> and
+                                <strong>Data Science</strong>.
+                            </p>
+                            <div class="about-tags">
+                                <span>
+                                    <i class="fa-solid fa-code"></i>
+                                    Web Applications
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-server"></i>
+                                    Backend Systems
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-database"></i>
+                                    Data Systems
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-brain"></i>
+                                    ML Solutions
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    Data Analysis
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-gears"></i>
+                                    Problem Solving
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT -->
+                    <div class="about-side">
+                        <!-- EDUCATION CARD -->
+                        <div class="profile-info-card">
+                            <div class="info-card-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <p class="info-card-label">
+                                    EDUCATION
+                                </p>
+                                <h3>
+                                    B.Tech in Computer Science
+                                </h3>
+                                <p class="info-card-value">
+                                    National Institute of Technology Rourkela
+                                </p>
+                                <p class="info-card-meta">
+                                    2023 — Present
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FOCUS CARD -->
+                        <div class="profile-info-card">
+                            <div class="info-card-icon">
+                                <i class="fa-solid fa-crosshairs"></i>
+                            </div>
+                            <div>
+                                <p class="info-card-label">
+                                    CURRENT FOCUS
+                                </p>
+                                <h3>
+                                    Software + Intelligence
+                                </h3>
+                                <p class="info-card-value">
+                                    Full-Stack Development · Machine Learning
+                                    · Data Science
+                                </p>
+                            </div>
+                        </div>
+                        <!-- APPROACH CARD -->
+                        <div class="profile-info-card">
+                            <div class="info-card-icon">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <p class="info-card-label">
+                                    APPROACH
+                                </p>
+                                <h3>
+                                    Learn → Build → Improve
+                                </h3>
+                                <p class="info-card-value">
+                                    I focus on understanding fundamentals,
+                                    building practical projects, and
+                                    continuously improving my engineering skills.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CORE AREAS -->
+                <div class="about-focus">
+                    <div class="focus-heading">
+                        <p class="section-eyebrow">
+                            CORE AREAS
+                        </p>
+                        <h3>
+                            Where I focus my engineering work
+                        </h3>
+                    </div>
+                    <div class="focus-grid">
+                        <div class="focus-item">
+                            <div class="focus-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h4>
+                                Web Development
+                            </h4>
+                            <p>
+                                Building responsive, full-stack applications
+                                with modern frontend, backend, APIs, and
+                                database technologies.
+                            </p>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h4>
+                                Machine Learning
+                            </h4>
+                            <p>
+                                Working with data, feature engineering,
+                                model development, evaluation, and
+                                predictive solutions.
+                            </p>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon">
+                                <i class="fa-solid fa-chart-column"></i>
+                            </div>
+                            <h4>
+                                Data Science
+                            </h4>
+                            <p>
+                                Exploring datasets, performing analysis,
+                                extracting useful insights, and building
+                                data-driven models.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================
+            TECHNICAL SKILLS
+        ========================== -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <!-- SECTION HEADER -->
+                <div class="section-heading skills-heading">
+                    <p class="section-eyebrow">
+                        TECHNICAL SKILLS
+                    </p>
+                    <h2>
+                        Tools I use to
+                        <span>build and solve.</span>
+                    </h2>
+                    <p class="section-heading-description">
+                        A growing technical toolkit across software
+                        development, machine learning, data science,
+                        databases, and developer tools.
+                    </p>
+                </div>
+                <!-- SKILLS GRID -->
+                <div class="skills-grid">
+                    <!-- =========================
+                        WEB DEVELOPMENT
+                    ========================== -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div>
+                                <p class="skill-category-label">
+                                    01 / DEVELOPMENT
+                                </p>
+                                <h3>
+                                    Frontend Development
+                                </h3>
+                            </div>
+                        </div>
+                        <p class="skill-category-description">
+                            Building responsive interfaces and
+                            full-stack web applications with modern
+                            frontend and backend technologies.
+                        </p>
+                        <div class="technology-list">
+                            <span class="technology-tag ">
+                                <!-- <i class="fa-brands fa-html5"></i> -->
+                                HTML5
+                            </span>
+                            <span class="technology-tag ">
+                                <!-- <i class="fa-brands fa-css3-alt"></i> -->
+                                CSS3
+                            </span>
+                            <span class="technology-tag ">
+                                <!-- <i class="fa-brands fa-js"></i> -->
+                                JavaScript
+                            </span>
+                            <span class="technology-tag ">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+                                React
+                            </span>
+                            <span class="technology-tag ">
+                                Bootstrap
+                            </span>
+                            <span class="technology-tag ">
+                                Tailwind CSS
+                            </span>
+                            <span class="technology-tag ">
+                                EJS
+                            </span>
+                        </div>
+                    </div>
+                    <!-- =========================
+                        BACKEND
+                    ========================== -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <div>
+                                <p class="skill-category-label">
+                                    02 / BACKEND
+                                </p>
+                                <h3>
+                                    Backend Engineering
+                                </h3>
+                            </div>
+                        </div>
+                        <p class="skill-category-description">
+                            Developing server-side applications,
+                            APIs, authentication systems, and
+                            backend workflows.
+                        </p>
+                        <div class="technology-list">
+                            <span class="technology-tag ">
+                                <!-- <i class="fa-brands fa-node-js"></i> -->
+                                Node.js
+                            </span>
+                            <span class="technology-tag ">
+                                Express.js
+                            </span>
+                            <span class="technology-tag ">
+                                REST APIs
+                            </span>
+                            <span class="technology-tag ">
+                                JWT
+                            </span>
+                            <span class="technology-tag ">
+                                Socket.IO
+                            </span>
+                        </div>
+                    </div>
+                    <!-- =========================
+                        DATABASES
+                    ========================== -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div>
+                                <p class="skill-category-label">
+                                    03 / DATA SYSTEMS
+                                </p>
+                                <h3>
+                                    Databases
+                                </h3>
+                            </div>
+                        </div>
+                        <p class="skill-category-description">
+                            Working with relational and NoSQL databases,
+                            data modeling, queries, and application
+                            data management.
+                        </p>
+                        <div class="technology-list ">
+                            <span class="technology-tag ">
+                                MySQL
+                            </span>
+                            <span class="technology-tag ">
+                                PostgreSQL
+                            </span>
+                            <span class="technology-tag ">
+                                MongoDB
+                            </span>
+                            <span class="technology-tag ">
+                                Redis
+                            </span>
+                        </div>
+                    </div>
+                    <!-- =========================
+                        MACHINE LEARNING
+                    ========================== -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div>
+                                <p class="skill-category-label">
+                                    04 / INTELLIGENCE
+                                </p>
+                                <h3>
+                                    Machine Learning
+                                </h3>
+                            </div>
+                        </div>
+                        <p class="skill-category-description">
+                            Developing machine learning solutions
+                            through data preparation, feature engineering,
+                            model training, validation, and evaluation.
+                        </p>
+                        <div class="technology-list">
+                            <span class="technology-tag ">
+                                Python
+                            </span>
+                            <span class="technology-tag ">
 
-                    <a href="https://wa.me/917684846061?text=Hi%20Bishal!%20I%20visited%20your%20portfolio."
-                        target="_blank" class="social-icon">
-                        <i class="fab fa-whatsapp"></i>
+                                NumPy
+                            </span>
+                            <span class="technology-tag ">
+                                Pandas
+                            </span>
+                            <span class="technology-tag ">
+                                Scikit-learn
+                            </span>
+                            <span class="technology-tag ">
+                                Regression
+                            </span>
+                            <span class="technology-tag ">
+                                Classification
+                            </span>
+                            <span class="technology-tag ">
+                                Feature Engineering
+                            </span>
+                            <span class="technology-tag ">
+                                Model Evaluation
+                            </span>
+                        </div>
+                    </div>
+                    <!-- =========================
+                        DATA SCIENCE
+                    ========================== -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <p class="skill-category-label">
+                                    05 / ANALYTICS
+                                </p>
+                                <h3>
+                                    Data Science
+                                </h3>
+                            </div>
+                        </div>
+                        <p class="skill-category-description">
+                            Exploring data, identifying patterns,
+                            engineering useful features, and extracting
+                            insights for predictive modeling.
+                        </p>
+                        <div class="technology-list">
+                            <span class="technology-tag ">
+                                Data Analysis
+                            </span>
+                            <span class="technology-tag ">
+                                Exploratory Data Analysis
+                            </span>
+                            <span class="technology-tag ">
+                                Data Cleaning
+                            </span>
+                            <span class="technology-tag ">
+                                Visualization
+                            </span>
+                            <span class="technology-tag ">
+                                Statistical Analysis
+                            </span>
+                        </div>
+                    </div>
+                    <!-- =========================
+                        PROGRAMMING
+                    ========================== -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+                            <div>
+                                <p class="skill-category-label">
+                                    06 / FUNDAMENTALS
+                                </p>
+                                <h3>
+                                    Programming & Computer Science
+                                </h3>
+                            </div>
+                        </div>
+                        <p class="skill-category-description">
+                            Strong foundation in programming, algorithms,
+                            problem solving, and computer science fundamentals.
+                        </p>
+                        <div class="technology-list">
+                            <span class="technology-tag ">
+                                Java
+                            </span>
+                            <span class="technology-tag ">
+                                Python
+                            </span>
+                            <span class="technology-tag ">
+                                JavaScript
+                            </span>
+                            <span class="technology-tag ">
+                                Data Structures
+                            </span>
+                            <span class="technology-tag ">
+                                Algorithms
+                            </span>
+                            <span class="technology-tag ">
+                                Database Management System
+                            </span>
+                            <span class="technology-tag ">
+                                Computer Networks
+                            </span>
+                            <span class="technology-tag ">
+                                Operating Systems
+                            </span>
+                        </div>
+                    </div>
+                    <!-- =========================
+                        DEVELOPER TOOLS
+                    ========================== -->
+                    <!-- 
+                     <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fa-solid fa-toolbox"></i>
+                            </div>
+                            <div>
+                                <p class="skill-category-label">
+                                    07 / WORKFLOW
+                                </p>
+                                <h3>
+                                    Developer Tools
+                                </h3>
+                            </div>
+                        </div>
+                        <p class="skill-category-description">
+                            Tools and platforms I use to develop,
+                            version, deploy, and maintain projects.
+                        </p>
+                        <div class="technology-list">
+                            <span class="technology-tag featured">
+                                <i class="fa-brands fa-git-alt"></i>
+                                Git
+                            </span>
+                            <span class="technology-tag featured">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </span>
+                            <span class="technology-tag">
+                                VS Code
+                            </span>
+                            <span class="technology-tag">
+                                Vercel
+                            </span>
+                            <span class="technology-tag">
+                                Render
+                            </span>
+                            <span class="technology-tag">
+                                Railway
+                            </span>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- SKILL FOOTER -->
+                <div class="skills-footer">
+                    <div>
+                        <span class="skills-footer-dot"></span>
+                        <p>
+                            Continuously learning and expanding my
+                            engineering toolkit.
+                        </p>
+                    </div>
+                    <a href="#projects">
+                        See what I've built
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- =========================
+            PROJECTS
+        ========================== -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <!-- SECTION HEADER -->
+                <div class="section-heading projects-heading">
+                    <p class="section-eyebrow">
+                        SELECTED WORK
+                    </p>
+                    <h2>
+                        Things I've
+                        <span>built.</span>
+                    </h2>
+                    <p class="section-heading-description">
+                        Projects where I apply software engineering,
+                        web development, problem-solving, and
+                        data-driven thinking to build practical solutions.
+                    </p>
+                </div>
+                <!-- =========================
+                    FEATURED PROJECT — 01
+                ========================== -->
+                <article class="featured-project">
+                    <!-- PROJECT VISUAL -->
+                    <div class="project-visual">
+                        <div class="project-window">
+                            <div class="project-window-bar">
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="window-label">
+                                    docflow
+                                </div>
+                            </div>
+                            <div class="project-preview">
+                                <div class="preview-navbar">
+                                    <strong>
+                                        DocFlow
+                                    </strong>
+                                    <div class="preview-nav-items">
+                                        Documents &nbsp; Workspace &nbsp; Profile
+                                    </div>
+                                </div>
+                                <div class="preview-content">
+                                    <p class="preview-small">
+                                        DOCUMENT WORKSPACE
+                                    </p>
+                                    <h3>
+                                        Create, organize and
+                                        collaborate on documents.
+                                    </h3>
+                                    <div class="preview-search">
+                                        <span>
+                                            Search documents...
+                                        </span>
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-number">
+                            01
+                        </div>
+                    </div>
+                    <!-- PROJECT INFORMATION -->
+                    <div class="featured-project-content">
+                        <div class="project-type">
+                            COLLABORATIVE DOCUMENT WORKSPACE
+                        </div>
+                        <h3>
+                            DocFlow
+                        </h3>
+                        <p class="project-description">
+                            A collaborative workspace that enables users
+                            to create, edit, organize, share, collaborate
+                            on, and download documents from a centralized
+                            platform.
+                            The project focuses on building a practical
+                            full-stack workflow around document management
+                            and collaboration.
+                        </p>
+                        <!-- ENGINEERING FEATURES -->
+                        <div class="project-features">
+                            <div class="project-feature">
+                                <i class="fa-solid fa-file-pen"></i>
+                                <span>
+                                    Document Creation
+                                </span>
+                            </div>
+                            <div class="project-feature">
+                                <i class="fa-solid fa-folder-open"></i>
+                                <span>
+                                    Document Organization
+                                </span>
+                            </div>
+                            <div class="project-feature">
+                                <i class="fa-solid fa-users"></i>
+                                <span>
+                                    Collaboration
+                                </span>
+                            </div>
+                            <div class="project-feature">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <span>
+                                    Sharing
+                                </span>
+                            </div>
+                        </div>
+                        <!-- TECHNOLOGIES -->
+                        <div class="project-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <!-- LINKS -->
+                        <div class="project-links">
+                            <a href="https://docflow-self.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="project-link project-link-primary">
+                                Live Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/jaiswalbishal/DocFlow" target="_blank" rel="noopener noreferrer"
+                                class="project-link">
+                                <i class="fa-brands fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- =========================
+                    OTHER PROJECTS
+                ========================== -->
+                <div class="projects-grid">
+                    <!-- =========================
+                        PROJECT 02 — BOOKMYVENUE
+                    ========================== -->
+                    <article class="project-card-new">
+                        <div class="project-card-visual project-visual-docflow">
+                            <div class="mini-window">
+                                <div class="mini-window-header">
+                                    <div class="window-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>
+                                        BookMyVenue
+                                    </span>
+                                </div>
+                                <div class="docflow-preview">
+                                    <div class="doc-sidebar">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="doc-content">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-card-number">
+                                02
+                            </span>
+                        </div>
+                        <div class="project-card-content">
+                            <p class="project-type">
+                                FULL-STACK WEB APPLICATION
+                            </p>
+                            <h3>
+                                Venue Booking Platform
+                            </h3>
+                            <p>
+                                A full-stack venue booking platform with
+                                authentication, venue management, booking
+                                workflows, database integration, and
+                                payment integration.
+                            </p>
+                            <div class="project-stack">
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>EJS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://bookmyvenue-nf5p.onrender.com/" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link-primary">
+                                    Live Demo
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a href="https://github.com/jaiswalbishal/BookMyVenue" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- =========================
+                        PROJECT 03 — SIMON SAYS
+                    ========================== -->
+                    <article class="project-card-new">
+                        <div class="project-card-visual project-visual-game">
+                            <div class="game-preview">
+                                <div class="game-preview-title">
+                                    SIMON SAYS
+                                </div>
+                                <div class="game-buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="game-score">
+                                    SCORE: 12
+                                </div>
+                            </div>
+                            <span class="project-card-number">
+                                03
+                            </span>
+                        </div>
+                        <div class="project-card-content">
+                            <p class="project-type">
+                                INTERACTIVE WEB APPLICATION
+                            </p>
+                            <h3>
+                                Simon Says
+                            </h3>
+                            <p>
+                                A browser-based memory game featuring
+                                sequence generation, interactive gameplay,
+                                user input handling, and score tracking.
+                            </p>
+                            <div class="project-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jaiswalbishal.github.io/SimonSays/" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link-primary">
+                                    Live Demo
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a href="https://github.com/jaiswalbishal/SimonSays" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- PROJECT FOOTER -->
+                <div class="projects-footer">
+                    <p>
+                        More projects and experiments will showcase my
+                        work across Web Development, Machine Learning,
+                        and Data Science.
+                    </p>
+                    <a href="https://github.com/jaiswalbishal" target="_blank" rel="noopener noreferrer">
+                        View GitHub
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- =========================
+            MACHINE LEARNING & DATA SCIENCE
+        ========================== -->
+        <section id="ml-ds" class="ml-section">
+            <div class="container">
+                <!-- SECTION HEADER -->
+                <div class="section-heading ml-heading">
+                    <p class="section-eyebrow">
+                        MACHINE LEARNING & DATA SCIENCE
+                    </p>
+                    <h2>
+                        From raw data
+                        <span>to useful models.</span>
+                    </h2>
+                    <p class="section-heading-description">
+                        My ML and Data Science workflow focuses on understanding
+                        data, engineering useful features, building models,
+                        evaluating results, and iterating toward better solutions.
+                    </p>
+                </div>
+                <!-- =========================
+                    WORKFLOW
+                ========================== -->
+                <div class="ml-workflow">
+                    <div class="workflow-line"></div>
+                    <!-- STEP 01 -->
+                    <div class="workflow-step">
+                        <div class="workflow-number">
+                            01
+                        </div>
+                        <div class="workflow-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3>
+                            Understand Data
+                        </h3>
+                        <p>
+                            Explore datasets, understand variables,
+                            identify patterns, and examine data quality.
+                        </p>
+                    </div>
+                    <!-- STEP 02 -->
+                    <div class="workflow-step">
+                        <div class="workflow-number">
+                            02
+                        </div>
+                        <div class="workflow-icon">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+                        <h3>
+                            Prepare & Engineer
+                        </h3>
+                        <p>
+                            Clean data, handle missing values, transform
+                            variables, and create useful features.
+                        </p>
+                    </div>
+                    <!-- STEP 03 -->
+                    <div class="workflow-step">
+                        <div class="workflow-number">
+                            03
+                        </div>
+                        <div class="workflow-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>
+                            Build Models
+                        </h3>
+                        <p>
+                            Apply suitable machine learning algorithms
+                            and build reproducible modeling pipelines.
+                        </p>
+                    </div>
+                    <!-- STEP 04 -->
+                    <div class="workflow-step">
+                        <div class="workflow-number">
+                            04
+                        </div>
+                        <div class="workflow-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>
+                            Evaluate
+                        </h3>
+                        <p>
+                            Use appropriate metrics and validation
+                            techniques to understand model performance.
+                        </p>
+                    </div>
+                    <!-- STEP 05 -->
+                    <div class="workflow-step">
+                        <div class="workflow-number">
+                            05
+                        </div>
+                        <div class="workflow-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <h3>
+                            Iterate
+                        </h3>
+                        <p>
+                            Analyze results, improve features and models,
+                            and continuously refine the solution.
+                        </p>
+                    </div>
+                </div>
+                <!-- =========================
+                    ML / DS CAPABILITIES
+                ========================== -->
+                <div class="ml-capabilities">
+                    <div class="ml-capability-intro">
+                        <p class="section-eyebrow">
+                            AREAS OF WORK
+                        </p>
+                        <h3>
+                            What I'm building toward
+                        </h3>
+                        <p>
+                            A practical foundation across the complete
+                            machine learning and data science workflow.
+                        </p>
+                    </div>
+                    <div class="ml-capability-grid">
+                        <!-- DATA ANALYSIS -->
+                        <div class="ml-capability-card">
+                            <div class="capability-top">
+                                <div class="capability-icon">
+                                    <i class="fa-solid fa-chart-column"></i>
+                                </div>
+                                <span>
+                                    01
+                                </span>
+                            </div>
+                            <h4>
+                                Data Analysis
+                            </h4>
+                            <p>
+                                Exploring datasets, identifying trends,
+                                understanding distributions, and extracting
+                                meaningful information from data.
+                            </p>
+                            <div class="capability-tags">
+                                <span>NumPy</span>
+                                <span>Pandas</span>
+                                <span>EDA</span>
+                                <span>Visualization</span>
+                            </div>
+                        </div>
+                        <!-- FEATURE ENGINEERING -->
+                        <div class="ml-capability-card">
+                            <div class="capability-top">
+                                <div class="capability-icon">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <span>
+                                    02
+                                </span>
+                            </div>
+                            <h4>
+                                Feature Engineering
+                            </h4>
+                            <p>
+                                Transforming raw variables into meaningful
+                                features and preparing data for machine
+                                learning models.
+                            </p>
+                            <div class="capability-tags">
+                                <span>Transformation</span>
+                                <span>Encoding</span>
+                                <span>Scaling</span>
+                                <span>Selection</span>
+                            </div>
+                        </div>
+                        <!-- MACHINE LEARNING -->
+                        <div class="ml-capability-card">
+                            <div class="capability-top">
+                                <div class="capability-icon">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                                <span>
+                                    03
+                                </span>
+                            </div>
+                            <h4>
+                                Machine Learning
+                            </h4>
+                            <p>
+                                Working with supervised learning problems,
+                                model training, validation, comparison,
+                                and performance analysis.
+                            </p>
+                            <div class="capability-tags">
+                                <span>Regression</span>
+                                <span>Classification</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                        </div>
+                        <!-- MODEL EVALUATION -->
+                        <div class="ml-capability-card">
+                            <div class="capability-top">
+                                <div class="capability-icon">
+                                    <i class="fa-solid fa-gauge-high"></i>
+                                </div>
+                                <span>
+                                    04
+                                </span>
+                            </div>
+                            <h4>
+                                Model Evaluation
+                            </h4>
+                            <p>
+                                Comparing models using appropriate metrics,
+                                cross-validation, and systematic experiments
+                                rather than relying on a single split.
+                            </p>
+                            <div class="capability-tags">
+                                <span>Cross-Validation</span>
+                                <span>Metrics</span>
+                                <span>Model Comparison</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =========================
+                    ML PROJECTS CTA
+                ========================== -->
+                <div class="ml-projects-cta">
+                    <div>
+                        <span class="cta-label">
+                            BUILDING IN PUBLIC
+                        </span>
+                        <h3>
+                            More ML & Data Science projects
+                            are on the way.
+                        </h3>
+                        <p>
+                            I'm continuously expanding my practical work
+                            across machine learning, data analysis, and
+                            intelligent systems.
+                        </p>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Connect
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- =========================
+            EDUCATION & CERTIFICATIONS
+        ========================= -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <div class="section-heading education-heading">
+                    <p class="section-eyebrow">EDUCATION & CERTIFICATIONS</p>
+                    <h2>
+                        Learning with
+                        <span>purpose.</span>
+                    </h2>
+                    <p class="section-heading-description">
+                        A computer science foundation supported by continuous
+                        learning in software engineering, machine learning,
+                        and emerging AI technologies.
+                    </p>
+                </div>
+                <div class="education-layout">
+                    <!-- EDUCATION -->
+                    <div class="education-column">
+                        <div class="column-label">
+                            <span>01</span>
+                            <strong>EDUCATION</strong>
+                        </div>
+                        <article class="education-card">
+                            <div class="education-card-top">
+                                <div>
+                                    <p class="education-period">2023 — PRESENT</p>
+                                    <h3>
+                                        Bachelor of Technology
+                                    </h3>
+                                    <p class="education-field">
+                                        Computer Science & Engineering
+                                    </p>
+                                </div>
+                                <div class="education-status">
+                                    IN PROGRESS
+                                </div>
+                            </div>
+                            <div class="education-divider"></div>
+                            <div class="education-institution">
+                                <div class="institution-mark">NIT</div>
+                                <div>
+                                    <strong>
+                                        National Institute of Technology Rourkela
+                                    </strong>
+                                    <span>
+                                        NIT Rourkela, Odisha, India
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="education-details">
+                                <div class="education-detail">
+                                    <span>PROGRAM</span>
+                                    <strong>B.Tech CSE</strong>
+                                </div>
+                                <div class="education-detail">
+                                    <span>CGPA</span>
+                                    <strong>7.02</strong>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="education-card secondary-education">
+                            <div class="education-card-top">
+                                <div>
+                                    <p class="education-period">2020 — 2022</p>
+                                    <h3>
+                                        Higher Secondary Education
+                                    </h3>
+                                    <p class="education-field">
+                                        Science Stream
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-divider"></div>
+                            <div class="education-institution">
+                                <div class="institution-mark">
+                                    PA
+                                </div>
+                                <div>
+                                    <strong>
+                                        Prasadi Academy Higher Secondary School
+                                    </strong>
+                                    <span>
+                                        Science Stream
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="education-details">
+                                <div class="education-detail">
+                                    <span>STREAM</span>
+                                    <strong>Science</strong>
+                                </div>
+                                <div class="education-detail">
+                                    <span>RESULT</span>
+                                    <strong>88.75%</strong>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- CERTIFICATIONS -->
+                    <div class="certifications-column">
+                        <div class="column-label">
+                            <span>02</span>
+                            <strong>CERTIFICATIONS</strong>
+                        </div>
+                        <div class="certification-list">
+                            <!-- Oracle AI Foundation -->
+                            <article class="certification-card">
+                                <div class="certification-icon">
+                                    AI
+                                </div>
+                                <div class="certification-content">
+                                    <p class="certification-issuer">
+                                        ORACLE
+                                    </p>
+                                    <h3>
+                                        Oracle AI Foundation Certification
+                                    </h3>
+                                    <p class="certification-date">
+                                        Issued October 2025
+                                    </p>
+                                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=EB0A370969A1F7D9848959B0ABCC9B02D9CF0F323EF20C2E1B605D1357EBEE30"
+                                        target="_blank" rel="noopener noreferrer" class="certification-link">
+                                        Verify Credential
+                                        <span>↗</span>
+                                    </a>
+                                </div>
+                            </article>
+                            <!-- Oracle Generative AI -->
+                            <article class="certification-card">
+                                <div class="certification-icon">
+                                    GenAI
+                                </div>
+                                <div class="certification-content">
+                                    <p class="certification-issuer">
+                                        ORACLE
+                                    </p>
+                                    <h3>
+                                        Oracle Generative AI Professional
+                                    </h3>
+                                    <p class="certification-date">
+                                        Issued October 2025
+                                    </p>
+                                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=4824DA2203B028B31F91124DCEB4022096E8DA91D81117F74027D66BD9505AA4"
+                                        target="_blank" rel="noopener noreferrer" class="certification-link">
+                                        Verify Credential
+                                        <span>↗</span>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="learning-note">
+                            <span class="learning-note-mark">+</span>
+                            <div>
+                                <strong>
+                                    Continuous Learning
+                                </strong>
+                                <p>
+                                    Currently expanding my skills across
+                                    machine learning, data science, backend
+                                    engineering, and modern AI systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================
+            CONTACT
+        ========================= -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- LEFT -->
+                    <div class="contact-intro">
+                        <p class="section-eyebrow">GET IN TOUCH</p>
+                        <h2>
+                            Let's build
+                            <span>something.</span>
+                        </h2>
+                        <p class="contact-description">
+                            Have a project idea, internship opportunity, collaboration,
+                            or simply want to connect? Feel free to reach out.
+                        </p>
+                        <div class="contact-details">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaiswalbishal17@gmail.com"
+                                target="_blank" rel="noopener noreferrer" class="contact-detail">
+                                <span class="contact-detail-label">EMAIL</span>
+                                <strong>jaiswalbishal17@gmail.com</strong>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jaiswalbishal" target="_blank"
+                                rel="noopener noreferrer" class="contact-detail">
+                                <span class="contact-detail-label">LINKEDIN</span>
+                                <strong>linkedin.com/in/jaiswalbishal</strong>
+                            </a>
+                            <a href="https://github.com/jaiswalbishal" target="_blank" rel="noopener noreferrer"
+                                class="contact-detail">
+                                <span class="contact-detail-label">GITHUB</span>
+                                <strong>github.com/jaiswalbishal</strong>
+                            </a>
+                            <a href="https://www.kaggle.com/jaiswalbishal" target="_blank" rel="noopener noreferrer"
+                                class="contact-detail">
+                                <span class="contact-detail-label">KAGGLE</span>
+                                <strong>kaggle.com/jaiswalbishal</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- RIGHT -->
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="from_name">
+                                        Your Name
+                                    </label>
+                                    <input type="text" id="from_name" name="from_name" placeholder="your-name"
+                                        autocomplete="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="from_email">
+                                        Your Email
+                                    </label>
+                                    <input type="email" id="from_email" name="from_email"
+                                        placeholder="your-email@example.com" autocomplete="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">
+                                    Message
+                                </label>
+                                <textarea id="message" name="message" rows="7" placeholder="Your message..."
+                                    required></textarea>
+                            </div>
+                            <!-- Honeypot -->
+                            <div class="form-honeypot" aria-hidden="true">
+                                <label for="website">
+                                    Website
+                                </label>
+                                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            <button type="submit" id="submitBtn" class="contact-submit">
+                                <span id="submitText">
+                                    Send Message
+                                </span>
+                                <span class="submit-arrow">
+                                    →
+                                </span>
+                            </button>
+                            <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- =========================
+        FOOTER
+    ========================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        Bishal Jaiswal<span>.</span>
+                    </a>
+                    <p>
+                        Web Development · Machine Learning · Data Science
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#ml-ds">ML</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/jaiswalbishal" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.kaggle.com/jaiswalbishal" target="_blank" rel="noopener noreferrer"
+                        aria-label="Kaggle">
+                        <i class="fa-brands fa-kaggle"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaiswalbishal" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaiswalbishal17@gmail.com" target="_blank"
-                        rel="noopener noreferrer" class="social-icon" title="Email via Gmail">
-                        <i class="fas fa-envelope"></i>
+                        rel="noopener noreferrer" aria-label="Email Bishal">
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Bishal Jaiswal. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Resume Modal -->
-    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <iframe id="resumeFrame"
-                        src="https://drive.google.com/file/d/1N3qFgTFYXG9g9kMqoskXAQYeUITc14Ov/view?usp=sharing"></iframe>
-                    <div class="text-center mt-3">
-                        <a href="https://drive.google.com/file/d/1N3qFgTFYXG9g9kMqoskXAQYeUITc14Ov/view?usp=sharing"
-                            download class="btn btn-primary-custom" target="_blank">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Bishal Jaiswal. All rights reserved.
+                </p>
+                <a href="#home">
+                    Back to top ↑
+                </a>
             </div>
         </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    </footer>
+    <!-- JavaScript -->
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
+
 </html>
