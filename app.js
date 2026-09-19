@@ -1,93 +1,224 @@
-// Initialize EmailJS with your Public Key
-        // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
-        emailjs.init('Gru1VZy80bJO0IlhJ');
+document.addEventListener("DOMContentLoaded", () => {
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetSection = document.querySelector(targetId);
-                    
-                    if (targetSection) {
-                        const offsetTop = targetSection.offsetTop - 70;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                    
-                    const navCollapse = document.querySelector('.navbar-collapse');
-                    if (navCollapse.classList.contains('show')) {
-                        const bsCollapse = new bootstrap.Collapse(navCollapse);
-                        bsCollapse.hide();
-                    }
-                });
-            });
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.querySelector(".nav-links");
 
-            const form = document.getElementById('contactForm');
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const submitBtn = document.getElementById('submitBtn');
-                const btnText = document.getElementById('btnText');
-                const btnLoading = document.getElementById('btnLoading');
-                const formMessage = document.getElementById('formMessage');
-                
-                // Show loading state
-                btnText.style.display = 'none';
-                btnLoading.style.display = 'inline';
-                submitBtn.disabled = true;
-                formMessage.style.display = 'none';
-                
-                // Replace these with your actual EmailJS IDs
-                const serviceID = 'service_x72q2tf';
-                const templateID = 'template_8rfowbg';
-                
-                emailjs.sendForm(serviceID, templateID, form)
-                    .then(function(response) {
-                        console.log('SUCCESS!', response.status, response.text);
-                        
-                        // Show success message
-                        formMessage.style.display = 'block';
-                        formMessage.style.color = '#10b981';
-                        formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.';
-                        
-                        // Reset form
-                        form.reset();
-                        
-                        // Reset button
-                        btnText.style.display = 'inline';
-                        btnLoading.style.display = 'none';
-                        submitBtn.disabled = false;
-                        
-                        // Hide message after 5 seconds
-                        setTimeout(function() {
-                            formMessage.style.display = 'none';
-                        }, 5000);
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                        
-                        // Show error message
-                        formMessage.style.display = 'block';
-                        formMessage.style.color = '#ef4444';
-                        formMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Oops! Something went wrong. Please try again.';
-                        
-                        // Reset button
-                        btnText.style.display = 'inline';
-                        btnLoading.style.display = 'none';
-                        submitBtn.disabled = false;
-                    });
-            });
+    /* =========================
+       MOBILE NAVIGATION
+    ========================== */
 
-            const navbar = document.querySelector('.navbar');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 50) {
-                    navbar.style.backgroundColor = 'rgba(15, 23, 42, 1)';
-                } else {
-                    navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.95)';
-                }
-            });
+    menuToggle.addEventListener("click", () => {
+
+        navLinks.classList.toggle("open");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (navLinks.classList.contains("open")) {
+
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+
+        } else {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
+
+    });
+
+
+    /* Close mobile menu after clicking link */
+
+    document.querySelectorAll(".nav-link").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("open");
+
+            const icon = menuToggle.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
         });
+
+    });
+
+
+    /* =========================
+       ACTIVE NAVIGATION
+    ========================== */
+
+    const sections =
+        document.querySelectorAll("section[id]");
+
+    const links =
+        document.querySelectorAll(".nav-link");
+
+
+    window.addEventListener("scroll", () => {
+
+        let currentSection = "";
+
+        sections.forEach(section => {
+
+            const sectionTop =
+                section.offsetTop - 150;
+
+            if (window.scrollY >= sectionTop) {
+
+                currentSection =
+                    section.getAttribute("id");
+
+            }
+
+        });
+
+
+        links.forEach(link => {
+
+            link.classList.remove("active");
+
+            if (
+                link.getAttribute("href") ===
+                `#${currentSection}`
+            ) {
+
+                link.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+    let lastSubmissionTime = 0;
+    const SUBMISSION_COOLDOWN = 30000;
+    /* =========================
+    EMAILJS CONTACT FORM
+    ========================= */
+
+    emailjs.init({
+    publicKey: "Gru1VZy80bJO0IlhJ"
+    });
+
+
+    const contactForm = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const submitText = document.getElementById("submitText");
+    const formMessage = document.getElementById("formMessage");
+
+
+    contactForm.addEventListener("submit", async function (event) {
+
+    event.preventDefault();
+
+    const now = Date.now();
+
+    if (now - lastSubmissionTime < SUBMISSION_COOLDOWN) {
+
+        formMessage.textContent =
+            "Please wait a few seconds before sending another message.";
+
+        return;
+    }
+    lastSubmissionTime = Date.now();
+
+
+    /* -------------------------
+        HONEYPOT CHECK
+    ------------------------- */
+
+    const honeypot =
+        document.getElementById("website").value.trim();
+
+    if (honeypot !== "") {
+
+        formMessage.textContent =
+        "Unable to send this message.";
+
+        return;
+    }
+
+
+    /* -------------------------
+        BASIC VALIDATION
+    ------------------------- */
+
+    const name =
+        document.getElementById("from_name").value.trim();
+
+    const email =
+        document.getElementById("from_email").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+
+    if (!name || !email || !message) {
+
+        formMessage.textContent =
+        "Please complete all fields.";
+
+        return;
+    }
+
+
+    if (message.length < 10) {
+
+        formMessage.textContent =
+        "Please provide a little more detail in your message.";
+
+        return;
+    }
+
+
+    /* -------------------------
+        LOADING STATE
+    ------------------------- */
+
+    submitBtn.disabled = true;
+
+    submitText.textContent = "Sending...";
+
+    formMessage.textContent = "";
+
+
+    try {
+
+        await emailjs.sendForm(
+        "service_x72q2tf",
+        "template_8rfowbg",
+        contactForm
+        );
+
+
+        /* -------------------------
+        SUCCESS
+        ------------------------- */
+
+        formMessage.textContent =
+        "Message sent successfully. I'll get back to you soon.";
+
+        contactForm.reset();
+
+
+    } catch (error) {
+
+        console.error("EmailJS error:", error);
+
+        formMessage.textContent =
+        "Something went wrong. Please try again or contact me directly by email.";
+
+    } finally {
+
+        submitBtn.disabled = false;
+
+        submitText.textContent = "Send Message";
+
+    }
+
+    });
+
+});
