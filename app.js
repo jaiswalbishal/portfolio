@@ -1,6 +1,6 @@
 // Initialize EmailJS with your Public Key
         // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
-        emailjs.init('VF9qW_5W-n8eU2TXf');
+        emailjs.init('Gru1VZy80bJO0IlhJ');
 
         document.addEventListener('DOMContentLoaded', function() {
             const navLinks = document.querySelectorAll('.nav-link');
@@ -43,8 +43,8 @@
                 formMessage.style.display = 'none';
                 
                 // Replace these with your actual EmailJS IDs
-                const serviceID = 'service_n211auw';
-                const templateID = 'template_0ri30hg';
+                const serviceID = 'service_x72q2tf';
+                const templateID = 'template_8rfowbg';
                 
                 emailjs.sendForm(serviceID, templateID, form)
                     .then(function(response) {
